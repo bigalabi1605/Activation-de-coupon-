@@ -3,115 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CouponVerify</title>
+    <title>CouponVerify - Vérification de coupons</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- En-tête avec sélecteur de langue -->
-    <div class="top-bar">
-        <h1>CouponVerify</h1>
-        <div class="language-selector">EN ▼</div>
+    <!-- En-tête -->
+    <div class="header">
+        <h1>🎫 CouponVerify</h1>
+        <p class="subtitle">Vérifiez vos coupons en un clic</p>
     </div>
 
     <!-- Grille des coupons -->
-    <div class="coupon-grid">
-        <!-- Apple -->
-        <div class="coupon-card" onclick="verifyCoupon('Apple')">
-            <div class="coupon-icon">🍎</div>
-            <div class="coupon-name">Apple</div>
-        </div>
-        
-        <!-- Amazon -->
-        <div class="coupon-card" onclick="verifyCoupon('Amazon')">
-            <div class="coupon-icon">📦</div>
-            <div class="coupon-name">Amazon</div>
-        </div>
-        
-        <!-- Netflix -->
-        <div class="coupon-card" onclick="verifyCoupon('Netflix')">
-            <div class="coupon-icon">🎬</div>
-            <div class="coupon-name">Netflix</div>
-        </div>
-        
-        <!-- Neosurf -->
-        <div class="coupon-card" onclick="verifyCoupon('Neosurf')">
-            <div class="coupon-icon">💳</div>
-            <div class="coupon-name">Neosurf</div>
-        </div>
-        
-        <!-- Transcash -->
-        <div class="coupon-card" onclick="verifyCoupon('Transcash')">
-            <div class="coupon-icon">💰</div>
-            <div class="coupon-name">Transcash</div>
-        </div>
-        
-        <!-- Ethereum -->
-        <div class="coupon-card" onclick="verifyCoupon('Ethereum')">
-            <div class="coupon-icon">⟠</div>
-            <div class="coupon-name">Ethereum</div>
-        </div>
-        
-        <!-- Dogecoin -->
-        <div class="coupon-card" onclick="verifyCoupon('Dogecoin')">
-            <div class="coupon-icon">🐕</div>
-            <div class="coupon-name">Dogecoin</div>
-        </div>
-        
-        <!-- Bitcoin -->
-        <div class="coupon-card" onclick="verifyCoupon('Bitcoin')">
-            <div class="coupon-icon">₿</div>
-            <div class="coupon-name">Bitcoin</div>
-        </div>
-    </div>
+    <div class="coupon-grid" id="couponGrid"></div>
 
-    <!-- Section de vérification -->
-    <div class="verification-section">
-        <h2>Coupon Verification</h2>
-        <div class="verification-card">
-            <h3>Transcash</h3>
-            
-            <div class="input-group">
-                <label>Montant du Coupon</label>
-                <div class="currency-input">
-                    <input type="number" placeholder="Entrée montant">
-                    <span class="currency">EUR (€)</span>
-                </div>
+    <!-- Section features -->
+    <div class="features">
+        <h2>Nos fonctionnalités</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <span class="feature-icon">🌍</span>
+                <h3>Multilingue</h3>
+                <p>Traduction instantanée</p>
             </div>
-            
-            <div class="input-group">
-                <label>Code Coupon</label>
-                <input type="text" placeholder="Entrez votre code">
+            <div class="feature">
+                <span class="feature-icon">🔒</span>
+                <h3>Sécurité renforcée</h3>
+                <p>Chiffrement avancé</p>
             </div>
-            
-            <button class="verify-btn" onclick="startVerification()">Verify</button>
+            <div class="feature">
+                <span class="feature-icon">📊</span>
+                <h3>Historique</h3>
+                <p>Suivez vos vérifications</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📱</span>
+                <h3>Application mobile</h3>
+                <p>Vérifiez partout</p>
+            </div>
         </div>
     </div>
 
-    <!-- Section Features -->
-    <div class="features-section">
-        <h2>Our features</h2>
-        
-        <div class="feature-card">
-            <h3>Multilingual</h3>
-            <p>Instantly translate content into multiple languages</p>
-        </div>
-        
-        <div class="feature-card">
-            <h3>Enhanced security</h3>
-            <p>Secure coupon verification with advanced encryption</p>
-        </div>
-    </div>
-
-    <script>
-        function verifyCoupon(type) {
-            alert(`Vérification de coupon ${type}`);
-        }
-        
-        function startVerification() {
-            alert('Vérification en cours...');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
+</html></body>
     </html>
 <div class="coupon-card" onclick="verifyCoupon('Nom')">
     <div class="coupon-icon">🔹</div>
